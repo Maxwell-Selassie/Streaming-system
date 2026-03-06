@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "alembic>=1.18.4",
+    "dotenv>=0.9.9",
     "kafka-python>=2.3.0",
     "numpy>=2.4.2",
     "pandas>=3.0.1",
