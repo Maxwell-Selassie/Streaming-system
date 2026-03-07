@@ -1,0 +1,187 @@
+<mxfile host="65bd71144e">
+    <diagram id="TKEW6VFAFOgEEX4k33M1" name="Page-1">
+        <mxGraphModel dx="1312" dy="496" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.website_generic;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="200" width="90" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=classic;html=1;exitX=0.822;exitY=0.313;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="110.00000000000001" y="230.03999999999996" as="sourcePoint"/>
+                        <mxPoint x="206.02" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.kafka;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="203.34" width="94.5" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="304.5" y="229.5" as="sourcePoint"/>
+                        <mxPoint x="384.5" y="229.5" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="314.5" y="229.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="191.67000000000002" width="70" height="93.33" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="html=1;strokeWidth=2;outlineConnect=0;dashed=0;align=center;fontSize=8;fillColor=#c0f5a9;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.eip.aggregator;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="195" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="770" y="229.5" as="sourcePoint"/>
+                        <mxPoint x="870" y="229.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="LOAD" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1030" y="233" as="sourcePoint"/>
+                        <mxPoint x="1120" y="232.84" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;PRODUCER&lt;/h1&gt;&lt;div&gt;The producer is responsible for producing events for downstream use cases.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The Kafka producer uses a hashed key associated with an event to decide which partition to send an event to.&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Each event has a key/value pair, metadata and a hashed partition key&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="300" width="180" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="EVENTS:&lt;div&gt;1. KEY / VALUE&lt;/div&gt;&lt;div&gt;2. METADATA&amp;nbsp;&lt;/div&gt;&lt;div&gt;3. PARTITION&amp;nbsp; KEY&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-50" y="126.67" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="100" y="170" as="sourcePoint"/>
+                        <mxPoint x="110" y="157" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="KAFKA TOPIC" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="127" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="210" y="170" as="sourcePoint"/>
+                        <mxPoint x="250" y="157" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="BROKERS [PARTITION]&lt;div&gt;LEADER AND FOLLOWER BROKERS&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="100" width="120" height="87" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="10" y="240" as="sourcePoint"/>
+                        <mxPoint x="-20" y="190" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-30" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-90" y="90" as="sourcePoint"/>
+                        <mxPoint x="390" y="90" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-90" y="200" as="sourcePoint"/>
+                        <mxPoint x="-90" y="90" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="200" as="sourcePoint"/>
+                        <mxPoint x="390" y="90" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-90" y="200" as="sourcePoint"/>
+                        <mxPoint x="-50" y="200" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-30" y="200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="200" as="sourcePoint"/>
+                        <mxPoint x="390" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=none;html=1;entryX=0.333;entryY=1.128;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="200" as="sourcePoint"/>
+                        <mxPoint x="10" y="200" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="110" y="194"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="KAFKA CLUSTER" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="60" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;TOPICS, BROKERS AND PARTITION&lt;/h1&gt;&lt;div&gt;The event first goes through the kafka associated topic and the event is then partitioned (with an offset added to track individual events) and goes into the leader broker where consumers read events from.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;For reliability and redundancy, the data in the leader broker is replicated across several follower brokers.&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;The brokers are configured to keep events for 7 days before disposing them off&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="300" width="210" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;AGGREGATE&lt;/h1&gt;&lt;div&gt;The events are aggregated on a per minutes basis where events collected per 30 seconds are aggregated and stored in a postgres Database&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;There is a 30 second tumbling window with flush on timer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Each row contains window_start, product category, conversion_rate, total_orders, avg_orders, unique_products_per_order, total_price_per_product, total_quantity_per_product, avg_orders_per_continent, avg_orders_per_gender&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="300" width="200" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;LOAD&lt;/h1&gt;&lt;div&gt;The aggregated metrics are logged to postgres&lt;br&gt;&lt;br&gt;Timestamp is indexed and used as the primary key.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="300" width="180" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="FAILURE MODES" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-50" y="570" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="WRONG / INCOMPLETE EVENTS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="47" vertex="1">
+                    <mxGeometry x="-5" y="30" width="210" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="WRONG HASHING TECHNIQUE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="47" vertex="1">
+                    <mxGeometry x="-5" y="60" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="PRODUCER FAILURE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-25" y="658" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="FAILURE MODES" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="620" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="INCOMPLETE JSON FILE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="56" vertex="1">
+                    <mxGeometry x="15" y="30" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="INCORRECT DATA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="56" vertex="1">
+                    <mxGeometry x="35" y="60" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="FAILURE MODES" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="478" width="200" height="112" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="CONNECTION ERRORS TO DB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="59" vertex="1">
+                    <mxGeometry y="32" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="INVALID SCHEMA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="59" vertex="1">
+                    <mxGeometry x="30" y="62" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="POSTGRES DB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1120" y="330" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="LOGGING" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-90" y="750" width="1330" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="fillColor=#c0f5a9;dashed=0;outlineConnect=0;strokeWidth=2;html=1;align=center;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.eip.event_driven_consumer;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="180" width="150" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="550" y="230" as="sourcePoint"/>
+                        <mxPoint x="610" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;CONSUMER&lt;/h1&gt;&lt;div&gt;The consumer reads the events from kafka and performs aggregation.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;On crash - consumer resumes from last committed offset&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="298" width="180" height="172" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
