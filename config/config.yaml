@@ -1,0 +1,27 @@
+producer:
+  topic: "orders"
+  bootstrap_servers: "localhost:9092"
+  send_interval_seconds: 0.5
+  log_every_n_events: 100
+  product_categories:
+    - "Electronics"
+    - "Clothing"
+    - "Food"
+    - "Books"
+    - "Sports"
+
+  continents:
+    - "Africa"
+    - "Asia"
+    - "Europe"
+    - "North America"
+    - "South America"
+    - "Oceania"
+
+consumer:
+  topic: "orders"
+  bootstrap_servers: "localhost:9092"
+  group_id: "order_metrics_consumer"
+  window_seconds: 30
+  poll_timeout_ms: 1000
+  atuo_offset_reset: "earliest"
