@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 fake = Faker()
 
 # Load Config
-config_path = Path(__file__).parent / "config" / "config.yaml"
+config_path = Path(__file__).parent.parent / "config" / "config.yaml"
 with open(config_path) as file:
     config = yaml.safe_load(file)
 

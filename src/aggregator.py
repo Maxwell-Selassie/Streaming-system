@@ -44,7 +44,7 @@ def aggregate(df: pd.DataFrame, window_start: datetime) -> pd.DataFrame:
     metrics_df = (
         df.groupby('product_category')
         .agg(
-            total_orders = ("order_d", "count"),
+            total_orders = ("order_id", "count"),
             total_quantity = ("quantity", "sum"),
             unique_products = ("product_id", "nunique"),
             total_revenue = ("total_price", "sum"),

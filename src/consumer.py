@@ -10,7 +10,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 from src.aggregator import aggregate
-from src.load import upser_metrics
+from src.load import upsert_metrics
 load_dotenv()
 logger = logging.getLogger(__name__)
 
@@ -73,7 +73,7 @@ def flush_window(
         logger.warning(f"Aggregation produced empty dataframe - skipping load")
         return 0
     
-    rows_written = upser_metrics(metrics_df, engine)
+    rows_written = upsert_metrics(metrics_df, engine)
 
     logger.info(
         f"Window flushed - "
@@ -152,14 +152,14 @@ def run_consumer(engine) -> None:
                 )
                 total_flushed += rows 
 
-            # step 2: commit offset after successful flush 
-            # if flush fails, exception propagates up, offset is not
-            # committed, messages reprocessed on restart
-            consumer.commit()
+                # step 2: commit offset after successful flush 
+                # if flush fails, exception propagates up, offset is not
+                # committed, messages reprocessed on restart
+                consumer.commit()
 
-            # step 3: reset window state
-            window_events = []
-            window_start = datetime.now(timezone.utc)
+                # step 3: reset window state
+                window_events = []
+                window_start = datetime.now(timezone.utc)
 
             logger.info(
                 f"Consumer heartbeat - "
