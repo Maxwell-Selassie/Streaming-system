@@ -24,4 +24,4 @@ consumer:
   group_id: "order_metrics_consumer"
   window_seconds: 30
   poll_timeout_ms: 1000
-  atuo_offset_reset: "earliest"
+  auto_offset_reset: "earliest"
